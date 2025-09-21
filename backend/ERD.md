@@ -394,7 +394,6 @@ erDiagram
     pos_table {
         bigint id PK
         bigint store_id FK
-        varchar(20) name
         int table_no
         boolean active
         datetime(6) created_at
