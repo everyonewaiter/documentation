@@ -145,6 +145,7 @@ erDiagram
         enum printer_location "POS, HALL"
         boolean show_menu_popup
         boolean show_order_total_price
+        boolean show_order_menu_image
         varchar(255) country_of_origins
         varchar(255) staff_call_options
     }
@@ -308,6 +309,7 @@ erDiagram
         varchar(30) name
         bigint price
         int quantity
+        char(30) image
         boolean served
         datetime(6) served_time
         boolean print_enabled
