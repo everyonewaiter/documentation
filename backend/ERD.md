@@ -3,7 +3,6 @@
 ## 목차
 
 - [헬스 체크](#헬스-체크)
-- [서비스 도입 문의](#서비스-도입-문의)
 - [계정](#계정)
 - [매장 등록](#매장-등록)
 - [매장](#매장)
@@ -28,25 +27,6 @@ erDiagram
         int apk_minor_version
         int apk_patch_version
         varchar(255) apk_download_uri
-        datetime(6) created_at
-        datetime(6) updated_at
-    }
-```
-
----
-
-## 서비스 도입 문의
-
-_contact_
-
-```mermaid
-erDiagram
-    contact {
-        bigint id PK
-        varchar(30) store_name
-        char(12) license
-        char(11) phone_number
-        enum state "PENDING, PROCESSING, COMPLETE"
         datetime(6) created_at
         datetime(6) updated_at
     }
@@ -296,7 +276,7 @@ erDiagram
         enum type "PREPAID, POSTPAID"
         enum state "ORDER, CANCEL"
         bigint price
-        varchar(30) memo
+        varchar(10) memo
         boolean served
         datetime(6) served_time
         datetime(6) created_at
